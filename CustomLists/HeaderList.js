@@ -17,8 +17,6 @@ import {
   Ionicons,
   Entypo,
   MaterialCommunityIcons,
-  FontAwesome5,
-  FontAwesome,
   Fontisto,
   MaterialIcons,
 } from "@expo/vector-icons";
@@ -89,10 +87,10 @@ export default function HeaderList(props) {
       {/*------------------------------------------Header Section--------------------------------------- */}
       <View style={styles.header}>
         <View style={{ width: "10%" }}>
-          <Entypo name="location" size={24} color="black" />
+          <Entypo name="location" size={22} color="black" />
         </View>
         <View style={{ width: "80%" }}>
-          <Text style={{ fontSize: 18, color: "#434b56", fontWeight: "bold" }}>
+          <Text style={{ fontSize: 17, color: "#000", fontWeight: "bold" }}>
             Moje Chal, Lohegaon
           </Text>
         </View>
@@ -101,13 +99,13 @@ export default function HeaderList(props) {
             source={{
               uri: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
             }}
-            style={{ height: 30, width: 30 }}
+            style={{ height: 25, width: 25 }}
             imageStyle={{ borderRadius: 50 }}
           >
             <View
               style={{
-                height: 12,
-                width: 12,
+                height: 10,
+                width: 10,
                 backgroundColor: "red",
                 borderRadius: 15,
                 borderWidth: 2,
@@ -122,11 +120,11 @@ export default function HeaderList(props) {
       {/*----------------------------------------------------SearchBar Section----------------------------------------------------------------- */}
       <View style={{ width: "100%", height: 60, paddingHorizontal: 10 }}>
         <View style={styles.search}>
-          <AntDesign name="search1" size={22} color="#bf1363" />
+          <AntDesign name="search1" size={20} color="#bf1363" />
           <TextInput
             placeholderTextColor="grey"
             placeholder="Restaurant name, cuisine, or a dish..."
-            style={{ paddingLeft: 10, width: "90%", fontSize: 15 }}
+            style={{ paddingLeft: 10, width: "90%", fontSize: 14, outline:"none"}}
           />
         </View>
       </View>
@@ -149,7 +147,7 @@ export default function HeaderList(props) {
           <TouchableOpacity>
             <View style={styles.scrollcomp}>
               <Text
-                style={{ color: "#434b56", fontWeight: "bold", fontSize: 12 }}
+                style={{ color: "#000",fontWeight:"500", fontSize: 12 }}
               >
                 MAX Safety
               </Text>
@@ -161,11 +159,11 @@ export default function HeaderList(props) {
               <MaterialCommunityIcons
                 name="shield-star-outline"
                 size={15}
-                color="#434b56"
+                color="#000"
                 style={{ marginRight: 3 }}
               />
               <Text
-                style={{ color: "#434b56", fontWeight: "bold", fontSize: 12 }}
+                style={{ color: "#000", fontWeight: "500", fontSize: 12 }}
               >
                 PRO
               </Text>
@@ -175,14 +173,14 @@ export default function HeaderList(props) {
           <TouchableOpacity>
             <View style={styles.scrollcomp}>
               <Text
-                style={{ color: "#434b56", fontWeight: "bold", fontSize: 12 }}
+                style={{ color: "#000", fontWeight: "500", fontSize: 12 }}
               >
                 Cuisines
               </Text>
               <MaterialIcons
                 name="arrow-drop-down"
                 size={15}
-                color="#434b56"
+                color="#000"
                 style={{ marginLeft: 3 }}
               />
             </View>
@@ -191,14 +189,14 @@ export default function HeaderList(props) {
           <TouchableOpacity>
             <View style={styles.scrollcomp}>
               <Text
-                style={{ color: "#434b56", fontWeight: "bold", fontSize: 12 }}
+                style={{ color: "#000", fontWeight: "500", fontSize: 12 }}
               >
                 Rating 4.0
               </Text>
               <Fontisto
                 name="plus-a"
                 size={11}
-                color="#434b56"
+                color="#000"
                 style={{ marginLeft: 3 }}
               />
             </View>
@@ -207,7 +205,7 @@ export default function HeaderList(props) {
           <TouchableOpacity>
             <View style={styles.scrollcomp}>
               <Text
-                style={{ color: "#434b56", fontWeight: "bold", fontSize: 12 }}
+                style={{ color: "#000", fontWeight: "500", fontSize: 12 }}
               >
                 Fastest Delivery
               </Text>
@@ -217,7 +215,7 @@ export default function HeaderList(props) {
             {/*----------------------------------------------------Offers------------------------------------------------------------------------------------ */}
             <View style={styles.scrollcomp}>
               <Text
-                style={{ color: "#434b56", fontWeight: "bold", fontSize: 12 }}
+                style={{ color: "#000", fontWeight: "500", fontSize: 12 }}
               >
                 Offers
               </Text>
@@ -227,7 +225,7 @@ export default function HeaderList(props) {
             {/*---------------------------------------------------Takeaway-------------------------------------------------------------------------------- */}
             <View style={styles.scrollcomp}>
               <Text
-                style={{ color: "#434b56", fontWeight: "bold", fontSize: 12 }}
+                style={{ color: "#000", fontWeight: "500", fontSize: 12 }}
               >
                 Takeaway
               </Text>
@@ -237,14 +235,14 @@ export default function HeaderList(props) {
           <TouchableOpacity>
             <View style={styles.scrollcomp}>
               <Text
-                style={{ color: "#434b56", fontWeight: "bold", fontSize: 12 }}
+                style={{ color: "#000", fontWeight: "500", fontSize: 12 }}
               >
                 More
               </Text>
               <MaterialIcons
                 name="arrow-drop-down"
                 size={15}
-                color="#434b56"
+                color="#000"
                 style={{ marginLeft: 3 }}
               />
             </View>
@@ -272,10 +270,10 @@ export default function HeaderList(props) {
             <Ionicons
               name="ios-swap-vertical-sharp"
               size={15}
-              color="#434b56"
+              color="#000"
             />
             <Text
-              style={{ color: "#434b56", fontWeight: "bold", fontSize: 12 }}
+              style={{ color: "#000", fontWeight: "bold", fontSize: 12 }}
             >
               Popular
             </Text>
@@ -295,7 +293,7 @@ export default function HeaderList(props) {
             <View style={styles.item}>
               <Image source={item.img} style={styles.image} />
               <Text
-                style={{ fontWeight: "bold", fontSize: 14, color: "#434b56" }}
+                style={{ fontWeight: "bold", fontSize: 13, color: "#000" }}
               >
                 {item.name}
               </Text>
@@ -307,8 +305,8 @@ export default function HeaderList(props) {
             <Text
               style={{
                 fontWeight: "bold",
-                fontSize: 18,
-                color: "#434b56",
+                fontSize: 17,
+                color: "#000",
                 marginBottom: 10,
                 marginLeft: 15,
               }}
@@ -334,7 +332,6 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 0,
     backgroundColor: "white",
-    paddingTop: 50,
   },
   image: {
     height: 80,

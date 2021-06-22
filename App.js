@@ -26,7 +26,7 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator
         initialRouteName="Order"
-        activeColor="#434b56"
+        activeColor="#000"
         inactiveColor="#a1a1a1"
         barStyle={{
           backgroundColor: "white",
@@ -39,7 +39,7 @@ export default function App() {
           component={HeaderList}
           options={{
             tabBarIcon: ({ color }) => (
-              <SimpleLineIcons name="bag" size={21} color={color} />
+              <SimpleLineIcons name="bag" size={22} color={color} />
             ),
           }}
         />
@@ -50,7 +50,7 @@ export default function App() {
             tabBarIcon: ({ color }) => (
               <MaterialCommunityIcons
                 name="shoe-print"
-                size={21}
+                size={22}
                 color={color}
               />
             ),
@@ -63,7 +63,7 @@ export default function App() {
             tabBarIcon: ({ color }) => (
               <MaterialCommunityIcons
                 name="shield-star-outline"
-                size={21}
+                size={22}
                 color={color}
               />
             ),
@@ -76,7 +76,7 @@ export default function App() {
             tabBarIcon: ({ color }) => (
               <MaterialCommunityIcons
                 name="heart-flash"
-                size={21}
+                size={22}
                 color={color}
               />
             ),
@@ -87,7 +87,7 @@ export default function App() {
           component={Donate}
           options={{
             tabBarIcon: ({ color }) => (
-              <FontAwesome5 name="hand-holding-heart" size={21} color={color} />
+              <FontAwesome5 name="hand-holding-heart" size={22} color={color} />
             ),
           }}
         />

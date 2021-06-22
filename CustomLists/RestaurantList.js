@@ -64,9 +64,9 @@ export default function RestaurantList(props) {
     <View style={styles.container}>
       <Text
         style={{
-          fontSize: 20,
+          fontSize: 17,
           fontWeight: "bold",
-          color: "#434b56",
+          color: "#000",
           paddingLeft: 0,
         }}
       >
@@ -181,7 +181,7 @@ export default function RestaurantList(props) {
                         style={{
                           fontSize: 11,
                           fontWeight: "700",
-                          color: "#434b56",
+                          color: "#000",
                           paddingLeft: 5,
                         }}
                       >
@@ -207,7 +207,7 @@ export default function RestaurantList(props) {
                   <View style={{}}>
                     <Text
                       style={{
-                        color: "#434b56",
+                        color: "#000",
                         fontSize: 13,
                         fontWeight: "bold",
                       }}
@@ -250,7 +250,7 @@ export default function RestaurantList(props) {
                 >
                   <View>
                     <Text
-                      style={{ color: "#434b56", fontSize: 11, lineHeight: 15 }}
+                      style={{ color: "#000", fontSize: 11, lineHeight: 15 }}
                     >
                       {item.title}
                     </Text>
@@ -266,12 +266,12 @@ export default function RestaurantList(props) {
                     <FontAwesome
                       name="rupee"
                       size={10}
-                      color="#434b56"
+                      color="#000"
                       style={{ marginLeft: 0, marginTop: 2 }}
                     />
                     <Text
                       style={{
-                        color: "#434b56",
+                        color: "#000",
                         fontSize: 11,
                         lineHeight: 15,
                       }}
@@ -365,5 +365,9 @@ const styles = StyleSheet.create({
     height: 250,
     marginVertical: 20,
     elevation: 5,
+    shadowColor: '#000',
+    shadowOffset: { width: 1, height: 5 },
+    shadowOpacity: 0.7,
+    shadowRadius: 15,
   },
 });
